@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9862285caa94841a86456db34ab950f, type: 3}
+  m_Name: TeleportAbility
+  m_EditorClassIdentifier: 
+  <Duration>k__BackingField: 0.7
+  <Cooldown>k__BackingField: 0.3
+  <Image>k__BackingField: {fileID: 21300000, guid: 4957f857a26ad3747bd6f65f24d387be, type: 3}
+  <Parameters>k__BackingField:
+  - {fileID: 11400000, guid: efb44b5feaf74214dbd0f6cfe0102bb8, type: 2}
+  - {fileID: 11400000, guid: aeea10657d3dff14f80e406055219ed5, type: 2}
+  - {fileID: 11400000, guid: 569765b54ea489d439093e1cdc4ecbf2, type: 2}
+  - {fileID: 11400000, guid: 5046c5157c6e63a499a1994c10134c59, type: 2}
+  - {fileID: 11400000, guid: cfa22d4ba97a7804197265528cc7d653, type: 2}

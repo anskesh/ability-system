@@ -1,15 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
-using Object = UnityEngine.Object;
 
 namespace Services
 {
     public class ServiceLocator
     {
-        public static ProjectContext ProjectContext => _projectContext;
-        
         private static Dictionary<Type, IService> _services = new ();
         private static ProjectContext _projectContext;
 
@@ -20,12 +15,8 @@ namespace Services
         
         public static void Destroy()
         {
-            _services.Clear();
-            
-            Object.Destroy(_projectContext.gameObject);
             _projectContext = null;
-            
-            SceneManager.LoadScene("Init");
+            _services.Clear();
         }
 
         public static bool HasService<TService>() where TService : IService
@@ -61,29 +52,6 @@ namespace Services
                 return (TService) _services[type];
 
             throw new Exception($"Service {type} not found.");
-        }
-
-        public static T CreateInstance<T>(T prefab, Transform parent = null) where T : Object
-        {
-            if (prefab == null)
-                throw new NullReferenceException("Empty prefab, cannot create a instance.");
-
-            if (parent == null)
-                parent = _projectContext.transform;
-
-            return Object.Instantiate(prefab, parent);
-        }
-        
-        public static T CreateInstance<T>(T prefab, Vector3 position, Quaternion rotation, Transform parent = null)
-            where T : Object
-        {
-            if (prefab == null)
-                throw new NullReferenceException("Empty prefab, cannot create a instance.");
-
-            if (parent == null)
-                parent = _projectContext.transform;
-
-            return Object.Instantiate(prefab, position, rotation, parent);
         }
     }
 }

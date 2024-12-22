@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea1fa5e04f9d4d6ca2a469c95a87bbd0, type: 3}
   m_Name: ProjectConfiguration
   m_EditorClassIdentifier: 
-  Configurations: []
+  Configurations:
+  - {fileID: 11400000, guid: 6a2ed7d55ccfc454ababb2c4651c5315, type: 2}

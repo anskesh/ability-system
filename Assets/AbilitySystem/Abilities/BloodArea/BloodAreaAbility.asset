@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9862285caa94841a86456db34ab950f, type: 3}
+  m_Name: BloodAreaAbility
+  m_EditorClassIdentifier: 
+  <Duration>k__BackingField: 1
+  <Cooldown>k__BackingField: 0.2
+  <Image>k__BackingField: {fileID: 21300000, guid: 9104ab04601503a408cbf4587592413a, type: 3}
+  <Parameters>k__BackingField:
+  - {fileID: 11400000, guid: b8100dd6ec800894ebbe4c0a425b98a8, type: 2}
+  - {fileID: 11400000, guid: 35855fcea52693e4897fb39d32a12322, type: 2}
+  - {fileID: 11400000, guid: 530b9c94c675ecd4eb899aefa5be7ea3, type: 2}
+  - {fileID: 11400000, guid: e0c7a00fd2411e944ae956a8711ed15a, type: 2}
